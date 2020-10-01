@@ -1,21 +1,23 @@
+import Ordering.Double.IeeeOrdering
+
 object ClassesAndTraitsHw2 extends App {
 
-    sealed trait Shape extends Located with Bounded with Form
+    sealed trait Shape2D extends Located2D with Bounded2D with Form2D
 
 
-    sealed trait Located {
+    sealed trait Located2D {
       def x: Double
       def y: Double
     }
 
-    sealed trait Bounded {
+    sealed trait Bounded2D {
       def minX: Double
       def maxX: Double
       def minY: Double
       def maxY: Double
     }
 
-    final case class Point(x: Double, y: Double) extends Shape {
+    final case class Point2D(x: Double, y: Double) extends Shape2D {
       override def minX: Double = x
       override def maxX: Double = x
       override def minY: Double = y
@@ -23,7 +25,7 @@ object ClassesAndTraitsHw2 extends App {
       override def area: Double = 0
     }
 
-    final case class Circle(center: Point, radius: Double) extends Shape {
+    final case class Circle2D(center: Point2D, radius: Double) extends Shape2D {
       override def x: Double = center.x
       override def y: Double = center.y
       override def minX: Double = x - radius
@@ -33,7 +35,7 @@ object ClassesAndTraitsHw2 extends App {
       override def area: Double = Math.PI * radius * radius
     }
 
-    final case class Rectangle(center: Point, width: Double, height: Double) extends Shape {
+    final case class Rectangle2D(center: Point2D, width: Double, height: Double) extends Shape2D {
       override def x: Double = center.x
       override def y: Double = center.y
       override def minX: Double = x - width/2
@@ -44,17 +46,17 @@ object ClassesAndTraitsHw2 extends App {
     }
 
     // Add additional 2D shapes such as triangle and square.
-    final case class Triangle(ver1: Point, ver2: Point, ver3: Point) extends Shape {
+    final case class Triangle(ver1: Point2D, ver2: Point2D, ver3: Point2D) extends Shape2D {
       override def x: Double = (ver1.x + ver2.x + ver3.x) / 3
       override def y: Double = (ver1.y + ver2.y + ver3.y) / 3
-      override def minX: Double = List(ver1.x, ver2.x, ver3.x).min
-      override def maxX: Double = List(ver1.x, ver2.x, ver3.x).max
-      override def minY: Double = List(ver1.y, ver2.y, ver3.y).min
-      override def maxY: Double = List(ver1.y, ver2.y, ver3.y).max
+      override def minX: Double = List(ver1.x, ver2.x, ver3.x).sorted.head
+      override def maxX: Double = List(ver1.x, ver2.x, ver3.x).sorted.last
+      override def minY: Double = List(ver1.y, ver2.y, ver3.y).sorted.head
+      override def maxY: Double = List(ver1.y, ver2.y, ver3.y).sorted.last
       override def area: Double = ((ver1.x * (ver2.y - ver3.y)) + (ver2.x * (ver3.y - ver1.y)) + (ver3.x* (ver1.y - ver2.y))) / 2
     }
 
-    final case class Square(center: Point, side: Double) extends Shape {
+    final case class Square(center: Point2D, side: Double) extends Shape2D {
       override def x: Double = center.x
       override def y: Double = center.y
       override def minX: Double = x - side/2
@@ -66,7 +68,7 @@ object ClassesAndTraitsHw2 extends App {
 
     // Add method `area` to 2D shapes.
 
-    sealed trait Form {
+    sealed trait Form2D {
       def area: Double
     }
 
@@ -120,10 +122,10 @@ object ClassesAndTraitsHw2 extends App {
   }
 
   // Pattern matching and exhaustiveness checking
-  def describe(x: Shape): String = x match {
-    case Point(x, y) => s"Point(x = $x, y = $y)"
-    case Circle(center, radius) => s"Circle(center = $center, radius = $radius)"
-    case Rectangle(center,width,height) => s"Rectangle(center = $center, width = $width, height = $height)"
+  def describe(x: Shape2D): String = x match {
+    case Point2D(x, y) => s"Point(x = $x, y = $y)"
+    case Circle2D(center, radius) => s"Circle(center = $center, radius = $radius)"
+    case Rectangle2D(center,width,height) => s"Rectangle(center = $center, width = $width, height = $height)"
     case Triangle(ver1, ver2, ver3) => s"Triangle(ver1 = $ver1, ver2 = $ver2, ver3 = $ver3)"
     case Square(center, side) => s"Circle(center = $center, side = $side)"
   }
