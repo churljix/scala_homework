@@ -1,0 +1,55 @@
+[debug] Full compilation, no sources in previous analysis.
+[debug] All sources are invalidated.
+[debug] Initial set of included nodes: 
+[debug] Recompiling all sources: number of invalidated sources > 50.0% of all sources
+[info] Compiling 2 Scala sources to C:\Users\jana.smelena\Documents\scala\homework\target\scala-2.13\classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.13:1.3.5:compile for Scala 2.13.1
+[info] Non-compiled module 'compiler-bridge_2.13' for Scala 2.13.1. Compiling...
+[debug] Creating plain compiler interface for 2.13.1.
+[debug]   > Arguments: 
+[debug] 	-nowarn
+[debug] 	-d
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_927be795
+[debug] 	-bootclasspath
+[debug] 	C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.1\scala-library-2.13.1.jar
+[debug] 	-classpath
+[debug] 	C:\Users\jana.smelena\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-interface\1.3.5\compiler-interface-1.3.5.jar;C:\Users\jana.smelena\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\protobuf\protobuf-java\3.7.0\protobuf-java-3.7.0.jar;C:\Users\jana.smelena\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\util-interface\1.3.0\util-interface-1.3.0.jar;C:\Users\jana.smelena\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-bridge_2.13\1.3.5\compiler-bridge_2.13-1.3.5-sources.jar;C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.1\scala-compiler-2.13.1.jar;C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.1\scala-reflect-2.13.1.jar;C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\jline\jline\2.14.6\jline-2.14.6.jar;C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\fusesource\jansi\jansi\1.12\jansi-1.12.jar
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\API.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\Analyzer.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\CallbackGlobal.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\ClassName.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\Command.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\Compat.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\CompilerInterface.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\ConsoleInterface.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\DelegatingReporter.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\Dependency.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\ExtractAPI.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\ExtractUsedNames.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\GlobalHelpers.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\InteractiveConsoleFactory.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\InteractiveConsoleHelper.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\InteractiveConsoleInterface.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\InteractiveConsoleResponse.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\JarUtils.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\JavaUtils.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\LocalToNonLocalClass.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\LocateClassFile.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\Log.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\Message.scala
+[debug] 	C:\Users\JANA~1.SME\AppData\Local\Temp\sbt_79b7b3cc\xsbt\ScaladocInterface.scala
+[debug]       
+[info]   Compilation completed in 10.727s.
+[debug] Getting org.scala-sbt:compiler-bridge_2.13:1.3.5:compile for Scala 2.13.1
+[debug] [zinc] Running cached compiler 5dba9cd7 for Scala compiler version 2.13.1
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-deprecation
+[debug] 	-feature
+[debug] 	-deprecation
+[debug] 	-feature
+[debug] 	-bootclasspath
+[debug] 	C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.1\scala-library-2.13.1.jar
+[debug] 	-classpath
+[debug] 	C:\Users\jana.smelena\Documents\scala\homework\target\scala-2.13\classes;C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-parser-combinators_2.13\1.1.2\scala-parser-combinators_2.13-1.1.2.jar
+[debug] Scala compilation took 14.1809257 s
+[info] Done compiling.
