@@ -1,6 +1,8 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\jana.smelena\Documents\scala\homework\src\main\scala\ControlStructuresHw3.scala:48:5: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : String[0m
-[0m[[0m[31merror[0m] [0m[0m required: Either[ControlStructuresHw3.ErrorMessage,ControlStructuresHw3.Command][0m
-[0m[[0m[31merror[0m] [0m[0m    x[0m
-[0m[[0m[31merror[0m] [0m[0m    ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[debug] Acquiring lock on file C:\Users\jana.smelena\Documents\scala\homework\project\target\.sbt-compilation-infos\homework-compile\.sbt-idea-lock ...
+[warn] C:\Users\jana.smelena\Documents\scala\homework\src\main\scala\ControlStructuresHw3.scala:22:33: match may not be exhaustive.
+[warn] It would fail on the following input: Nil
+[warn]     x.toLowerCase().split(" +").toList match {
+[warn]                                 ^
+[warn] there were two deprecation warnings (since 2.13.0); re-run with -deprecation for details
+[warn] two warnings found
+[debug] Releasing lock on file C:\Users\jana.smelena\Documents\scala\homework\project\target\.sbt-compilation-infos\homework-compile\.sbt-idea-lock.
