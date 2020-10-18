@@ -60,7 +60,7 @@ object ImplicitsHomework {
       private val map = mutable.LinkedHashMap.empty[K, V]
 
       def put(key: K, value: V): Unit = {
-        val mapSize = map.keySet.map(_.sizeScore).sum + map.values.map(_.sizeScore).sum
+        val mapSize = map.keys.map(_.sizeScore).sum + map.values.map(_.sizeScore).sum
 
         if ((maxSizeScore < (mapSize + key.sizeScore + value.sizeScore)) && !map.isEmpty){
           map.remove(map.head._1)
@@ -111,7 +111,15 @@ object ImplicitsHomework {
       }
       //Provide Iterate2 instances for Map and PackedMultiMap!
       //if the code doesn't compile while you think it should - sometimes full rebuild helps!
+      implicit val mapIterate2: Iterate2[Map] = new Iterate2[Map] {
+        override def iterator1[T, S](f: Map[T, S]): Iterator[T] = f.keys.iterator
+        override def iterator2[T, S](f: Map[T, S]): Iterator[S] = f.values.iterator
+      }
 
+      implicit val packedMultiMapIterate2: Iterate2[PackedMultiMap] = new Iterate2[PackedMultiMap] {
+        override def iterator1[T, S](f: PackedMultiMap[T, S]): Iterator[T] = f.inner.toMap.keys.iterator
+        override def iterator2[T, S](f: PackedMultiMap[T, S]): Iterator[S] = f.inner.toMap.values.iterator
+      }
       /*
       replace this big guy with proper implicit instances for types:
       - Byte, Char, Int, Long
