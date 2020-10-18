@@ -158,6 +158,8 @@ object ImplicitsHomework {
    */
   object MyTwitter {
     import SuperVipCollections4s._
+    import instances._
+    import syntax._
 
     final case class Twit(
                            id: Long,
@@ -178,9 +180,19 @@ object ImplicitsHomework {
       def get(id: Long): Option[Twit]
     }
 
+    object Twit{
+      implicit val fbiNoteGetSizeScore: GetSizeScore[FbiNote] = (fbiNote: FbiNote) => fbiNote.month.sizeScore + fbiNote.favouriteChar.sizeScore + fbiNote.watchedPewDiePieTimes.sizeScore
+      implicit val twitGetSizeScore: GetSizeScore[Twit] = (twit: Twit) => sizeJVM + twit.id.sizeScore + twit.userId.sizeScore + twit.hashTags.sizeScore + twit.attributes.sizeScore + twit.fbiNotes.sizeScore
+    }
+
     /*
     Return an implementation based on MutableBoundedCache[Long, Twit]
      */
-    def createTwitCache(maxSizeScore: SizeScore): TwitCache = ???
+    def createTwitCache(maxSizeScore: SizeScore): TwitCache = new TwitCache {
+      val twitMap = new MutableBoundedCache[Long, Twit](maxSizeScore)
+
+      override def put(twit: Twit): Unit = twitMap.put(twit.id, twit)
+      override def get(id: Long): Option[Twit] = twitMap.get(id)
+    }
   }
 }
