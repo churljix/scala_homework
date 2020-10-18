@@ -101,6 +101,7 @@ object ImplicitsHomework {
 
     object instances {
       import syntax._
+      import instances._
 
       implicit val iterableOnceIterate: Iterate[Iterable] = new Iterate[Iterable] {
         override def iterator[T](f: Iterable[T]): Iterator[T] = f.iterator
@@ -120,6 +121,7 @@ object ImplicitsHomework {
         override def iterator1[T, S](f: PackedMultiMap[T, S]): Iterator[T] = f.inner.toMap.keys.iterator
         override def iterator2[T, S](f: PackedMultiMap[T, S]): Iterator[S] = f.inner.toMap.values.iterator
       }
+
       /*
       replace this big guy with proper implicit instances for types:
       - Byte, Char, Int, Long
@@ -131,7 +133,22 @@ object ImplicitsHomework {
       If you struggle with writing generic instances for Iterate and Iterate2, start by writing instances for
       List and other collections and then replace those with generic instances.
        */
-      implicit def stubGetSizeScore[T]: GetSizeScore[T] = (_: T) => 42
+      val sizeJVM: Int = 12
+
+      implicit def byteGetSizeScore: GetSizeScore[Byte] = _ => 1
+      implicit def charGetSizeScore: GetSizeScore[Char] = _ => 2
+      implicit def intGetSizeScore: GetSizeScore[Int] = _ => 4
+      implicit def longGetSizeScore: GetSizeScore[Long] = _ => 8
+
+      implicit def stringGetSizeScore: GetSizeScore[String] = (string: String) => sizeJVM + string.length * 2
+
+      implicit def arrayGetSizeScore[T: GetSizeScore]: GetSizeScore[Array[T]] = (array: Array[T]) => sizeJVM + array.map(_.sizeScore).sum
+      implicit def listGetSizeScore[T: GetSizeScore]: GetSizeScore[List[T]] = (list: List[T]) => sizeJVM + list.map(_.sizeScore).sum
+      implicit def vectorGetSizeScore[T: GetSizeScore]: GetSizeScore[Vector[T]] = (vector: Vector[T]) => sizeJVM + vector.map(_.sizeScore).sum
+      implicit def mapGetSizeScore[T: GetSizeScore]: GetSizeScore[Map[T, T]] = (map: Map[T, T]) => sizeJVM + map.keys.map(_.sizeScore).sum + map.values.map(_.sizeScore).sum
+      implicit def packedMultiMapGetSizeScore[T: GetSizeScore]: GetSizeScore[PackedMultiMap[T, T]] = (packedMultiMap: PackedMultiMap[T, T]) => sizeJVM + packedMultiMap.inner.toMap.keys.map(_.sizeScore).sum + packedMultiMap.inner.toMap.values.map(_.sizeScore).sum
+
+      //implicit def stubGetSizeScore[T]: GetSizeScore[T] = (_: T) => 42
     }
   }
 
