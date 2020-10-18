@@ -59,9 +59,20 @@ object ImplicitsHomework {
        */
       private val map = mutable.LinkedHashMap.empty[K, V]
 
-      def put(key: K, value: V): Unit = ???
+      def put(key: K, value: V): Unit = {
+        val mapSize = map.keySet.map(_.sizeScore).sum + map.values.map(_.sizeScore).sum
 
-      def get(key: K): Option[V] = ???
+        if ((maxSizeScore < (mapSize + key.sizeScore + value.sizeScore)) && !map.isEmpty){
+          map.remove(map.head._1)
+          put(key, value)
+        }
+        else
+          map.put(key, value)
+      }
+
+      def get(key: K): Option[V] = {
+        map.get(key)
+      }
     }
 
     /**
