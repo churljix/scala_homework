@@ -1,10 +1,8 @@
-
 import java.net.URL
 import java.util.concurrent.Executors
 
 import scala.concurrent.{ExecutionContext, Future}
 import scala.io.Source
-import scala.util.{Success, Failure}
 
 /**
  * Application:
