@@ -1,3 +1,4 @@
+/*
 package com.evolutiongaming.bootcamp.json
 
 import java.time.format.DateTimeFormatter
@@ -106,4 +107,4 @@ object HomeworkSpec {
     val body = Http(s"https://data.nba.net/10s/prod/v1/$dateString/${gameId}_boxscore.json").asString.body
     decode[BoxScore](body)
   }
-}
+}*/
