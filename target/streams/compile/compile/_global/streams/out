@@ -1,8 +1,6 @@
-[debug] Acquiring lock on file C:\Users\jana.smelena\Documents\scala\homework\project\target\.sbt-compilation-infos\homework-compile\.sbt-idea-lock ...
-[warn] C:\Users\jana.smelena\Documents\scala\homework\src\main\scala\ControlStructuresHw3.scala:22:33: match may not be exhaustive.
-[warn] It would fail on the following input: Nil
-[warn]     x.toLowerCase().split(" +").toList match {
-[warn]                                 ^
-[warn] there were two deprecation warnings (since 2.13.0); re-run with -deprecation for details
-[warn] two warnings found
-[debug] Releasing lock on file C:\Users\jana.smelena\Documents\scala\homework\project\target\.sbt-compilation-infos\homework-compile\.sbt-idea-lock.
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\jana.smelena\Documents\scala\homework\src\main\scala\ControlStructuresHw3.scala:22:33: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m    x.toLowerCase().split(" +").toList match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were two deprecation warnings (since 2.13.0); re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

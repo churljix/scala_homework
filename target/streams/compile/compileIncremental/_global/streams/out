@@ -1,38 +1,43 @@
-[debug] 
-[debug] Initial source changes: 
-[debug] 	removed:Set()
-[debug] 	added: Set(C:\Users\jana.smelena\Documents\scala\homework\src\main\scala\DataStructuresHw4.scala, C:\Users\jana.smelena\Documents\scala\homework\src\main\scala\ControlStructuresHw3.scala)
-[debug] 	modified: Set(C:\Users\jana.smelena\Documents\scala\homework\src\main\scala\ClassesAndTraitsHw2.scala)
-[debug] Invalidated products: Set()
-[debug] External API changes: API Changes: Set()
-[debug] Modified binary dependencies: Set()
-[debug] Initial directly invalidated classes: Set(ClassesAndTraitsHw2.Tetrahedron, ClassesAndTraitsHw2.Sphere, ClassesAndTraitsHw2.Shape2D, ClassesAndTraitsHw2.Located2D, ClassesAndTraitsHw2.Form3D, ClassesAndTraitsHw2.Bounded2D, ClassesAndTraitsHw2.Cuboid, ClassesAndTraitsHw2.Shape3D, ClassesAndTraitsHw2.Cube, ClassesAndTraitsHw2.Square, ClassesAndTraitsHw2.Rectangle2D, ClassesAndTraitsHw2.Form2D, ClassesAndTraitsHw2.Triangle, ClassesAndTraitsHw2, ClassesAndTraitsHw2.Point2D, ClassesAndTraitsHw2.Circle2D, ClassesAndTraitsHw2.Located3D, ClassesAndTraitsHw2.Point3D)
-[debug] 
-[debug] Sources indirectly invalidated by:
-[debug] 	product: Set()
-[debug] 	binary dep: Set()
-[debug] 	external source: Set()
-[debug] All initially invalidated classes: Set(ClassesAndTraitsHw2.Tetrahedron, ClassesAndTraitsHw2.Sphere, ClassesAndTraitsHw2.Shape2D, ClassesAndTraitsHw2.Located2D, ClassesAndTraitsHw2.Form3D, ClassesAndTraitsHw2.Bounded2D, ClassesAndTraitsHw2.Cuboid, ClassesAndTraitsHw2.Shape3D, ClassesAndTraitsHw2.Cube, ClassesAndTraitsHw2.Square, ClassesAndTraitsHw2.Rectangle2D, ClassesAndTraitsHw2.Form2D, ClassesAndTraitsHw2.Triangle, ClassesAndTraitsHw2, ClassesAndTraitsHw2.Point2D, ClassesAndTraitsHw2.Circle2D, ClassesAndTraitsHw2.Located3D, ClassesAndTraitsHw2.Point3D)
-[debug] All initially invalidated sources:Set(C:\Users\jana.smelena\Documents\scala\homework\src\main\scala\DataStructuresHw4.scala, C:\Users\jana.smelena\Documents\scala\homework\src\main\scala\ControlStructuresHw3.scala, C:\Users\jana.smelena\Documents\scala\homework\src\main\scala\ClassesAndTraitsHw2.scala)
-[debug] Initial set of included nodes: ClassesAndTraitsHw2.Tetrahedron, ClassesAndTraitsHw2.Sphere, ClassesAndTraitsHw2.Shape2D, ClassesAndTraitsHw2.Located2D, ClassesAndTraitsHw2.Form3D, ClassesAndTraitsHw2.Bounded2D, ClassesAndTraitsHw2.Cuboid, ClassesAndTraitsHw2.Shape3D, ClassesAndTraitsHw2.Cube, ClassesAndTraitsHw2.Square, ClassesAndTraitsHw2.Rectangle2D, ClassesAndTraitsHw2.Form2D, ClassesAndTraitsHw2.Triangle, ClassesAndTraitsHw2, ClassesAndTraitsHw2.Point2D, ClassesAndTraitsHw2.Circle2D, ClassesAndTraitsHw2.Located3D, ClassesAndTraitsHw2.Point3D
-[debug] Including ClassesAndTraitsHw2.Square by ClassesAndTraitsHw2.Shape2D
-[debug] Including ClassesAndTraitsHw2.Rectangle2D by ClassesAndTraitsHw2.Shape2D
-[debug] Including ClassesAndTraitsHw2.Triangle by ClassesAndTraitsHw2.Shape2D
-[debug] Including ClassesAndTraitsHw2.Point2D by ClassesAndTraitsHw2.Shape2D
-[debug] Including ClassesAndTraitsHw2.Circle2D by ClassesAndTraitsHw2.Shape2D
-[debug] Including ClassesAndTraitsHw2.Shape3D by ClassesAndTraitsHw2.Form3D
-[debug] Including ClassesAndTraitsHw2.Cuboid by ClassesAndTraitsHw2.Shape3D
-[debug] Including ClassesAndTraitsHw2.Cube by ClassesAndTraitsHw2.Shape3D
-[debug] Including ClassesAndTraitsHw2.Point3D by ClassesAndTraitsHw2.Shape3D
-[debug] Recompiling all sources: number of invalidated sources > 50.0% of all sources
-[info] Compiling 4 Scala sources to C:\Users\jana.smelena\Documents\scala\homework\target\scala-2.13\classes ...
-[debug] Getting org.scala-sbt:compiler-bridge_2.13:1.3.5:compile for Scala 2.13.1
-[debug] Getting org.scala-sbt:compiler-bridge_2.13:1.3.5:compile for Scala 2.13.1
-[debug] [zinc] Running cached compiler 5752cc22 for Scala compiler version 2.13.1
-[debug] [zinc] The Scala compiler is invoked with:
-[debug] 	-bootclasspath
-[debug] 	C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.1\scala-library-2.13.1.jar
-[debug] 	-classpath
-[debug] 	C:\Users\jana.smelena\Documents\scala\homework\target\scala-2.13\classes;C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-parser-combinators_2.13\1.1.2\scala-parser-combinators_2.13-1.1.2.jar
-[debug] Scala compilation took 8.2998095 s
-[info] Done compiling.
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(C:\Users\jana.smelena\Documents\scala\homework\src\main\scala\AsyncHw12.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set(C:\Users\jana.smelena\Documents\scala\homework\target\scala-2.13\classes\AsyncHomework.class, C:\Users\jana.smelena\Documents\scala\homework\target\scala-2.13\classes\AsyncHomework$delayedInit$body.class, C:\Users\jana.smelena\Documents\scala\homework\target\scala-2.13\classes\AsyncHomework$.class)[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(AsyncHomework)[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set(C:\Users\jana.smelena\Documents\scala\homework\src\main\scala\AsyncHw12.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(AsyncHomework)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(C:\Users\jana.smelena\Documents\scala\homework\src\main\scala\AsyncHw12.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: AsyncHomework[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to C:\Users\jana.smelena\Documents\scala\homework\target\scala-2.13\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.3.0:compile for Scala 2.13.1[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.3.0:compile for Scala 2.13.1[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 54be20e4 for Scala compiler version 2.13.1[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.1\scala-library-2.13.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\jana.smelena\Documents\scala\homework\target\scala-2.13\classes;C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-parser-combinators_2.13\1.1.2\scala-parser-combinators_2.13-1.1.2.jar;C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-kernel_2.13\2.2.0\cats-kernel_2.13-2.2.0.jar;C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-effect_2.13\2.2.0\cats-effect_2.13-2.2.0.jar;C:\Users\jana.smelena\Documents\scala\homework\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-core_2.13\2.2.0\cats-core_2.13-2.2.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 4.4745374 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from AsyncHomework...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: AsyncHomework[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(AsyncHomework)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(AsyncHomework,ModifiedNames(changes = UsedName(url,[Default]))) invalidates 1 classes due to The AsyncHomework has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(url,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(AsyncHomework)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m

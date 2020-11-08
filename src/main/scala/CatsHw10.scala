@@ -33,7 +33,7 @@ object CatsHw10 extends App {
    * When the same function is called with plain Strings it crashes with error:
    * Could not find an instance of Monad for Comparable
    */
-    println(stringConcat("Hello", "World!")) //bad
+   // println(stringConcat("Hello", "World!")) //bad
 
   /**
    * This is where Id comes in play.
